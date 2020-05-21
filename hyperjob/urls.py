@@ -21,28 +21,15 @@ from hyperjob.views import NewResumeView, NewVacancyView, HomeView
 from resume.views import ResumeView
 from vacancy.views import VacancyView
 
-# urlpatterns = [
-#     path('', MenuView.as_view(), name='menu'),
-#     path('menu/', MenuView.as_view(), name='menu'),
-#     path('login/', MyLoginView.as_view(), name='login'),
-#     path('signup/', SignupView.as_view(), name='signup'),
-#     path('resumes/', ResumeView.as_view(), name='resume'),
-#     path('vacancies/', VacancyView.as_view(), name='vacancy'),
-#     path('resume/new/', NewResumeView.as_view(), name='new_resume'),
-#     path('vacancy/new/', NewVacancyView.as_view(), name='new_vacancy'),
-#     path('home/', HomeView.as_view(), name='home'),
-#     path('admin/', admin.site.urls),
-# ]
-
 urlpatterns = [
     path('', MenuView.as_view(), name='menu'),
-    path('menu', MenuView.as_view(), name='menu'),
-    path('login', MyLoginView.as_view(), name='login'),
-    path('signup', SignupView.as_view(), name='signup'),
-    path('resumes', ResumeView.as_view(), name='resume'),
-    path('vacancies', VacancyView.as_view(), name='vacancy'),
-    path('resume/new', NewResumeView.as_view(), name='new_resume'),
-    path('vacancy/new', NewVacancyView.as_view(), name='new_vacancy'),
-    path('home', HomeView.as_view(), name='home'),
-    path('admin', admin.site.urls),
+    path('menu/', MenuView.as_view(), name='menu'),
+    path('login/', MyLoginView.as_view(), name='login'),
+    path('signup/', SignupView.as_view(), name='signup'),
+    path('resumes/', ResumeView.as_view(), name='resume'),
+    path('vacancies/', VacancyView.as_view(), name='vacancy'),
+    path('resume/new/', NewResumeView.as_view(), name='new_resume'),
+    path('vacancy/new/', NewVacancyView.as_view(), name='new_vacancy'),
+    path('home/', HomeView.as_view(), name='home'),
+    path('admin/', admin.site.urls),
 ]
